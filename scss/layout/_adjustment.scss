@@ -28,7 +28,7 @@
   min-width: rem(98px);
   padding: 10px 17px;
   border-radius: 5px;
-  background-color: $orange;
+  background-color: $red;
   color: #fff;
   text-decoration: none;
   font-size: 13px;
@@ -37,6 +37,6 @@
   text-transform: uppercase;
   transition: .5s;
   &:hover {
-    background-color: darken($orange, 7%);
+    background-color: darken($red, 7%);
   }
 }
