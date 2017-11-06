@@ -1,0 +1,39 @@
+.reviews-popup {
+    display: none;
+    width: 50%;
+    border-radius: 5px;
+
+    @include phones {
+        width: 95%;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .reviews__text {
+        color: $black;
+
+        @include phones {
+            display: inherit;
+        }
+    }
+}
+
+.reviews-popup__title {
+    @include gagalin ();
+    font-size: rem(14px);
+    color: $black;
+    margin-bottom: rem(25px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.close__link {
+    display: block;
+    outline: none;
+}
+
+.fancybox-close-small {
+    display: none;
+}
