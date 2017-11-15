@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../burgers/img/bg/hero_bg.png");
+  background-image: url("../img/bg/hero_bg.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -122,7 +122,7 @@
   line-height: 1; }
 
 .best {
-  background: url("../burgers/img/best.png") no-repeat;
+  background: url("../img/best.png") no-repeat;
   background-size: cover;
   text-align: center;
   display: -webkit-box;
