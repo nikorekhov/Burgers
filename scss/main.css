@@ -976,7 +976,7 @@
   line-height: 1.8; }
 
 .order {
-  background: url("../../img/order.png") 50% no-repeat;
+  background: url("../img/order.png") 50% no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
