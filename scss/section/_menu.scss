@@ -1,0 +1,91 @@
+.menu {
+  background: url("../img/menu.png") center center no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+
+.section-title_color{
+  position: absolute;
+  top: 13%;
+  left: 8%;
+}
+
+.menu-acco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.menu-acco__item {
+  height: 100%;
+  display: flex;
+  
+  	&.active {
+		.menu-acco__link{
+			color: $orange;
+		}
+	}
+}
+
+.menu-acco__img {
+  width: rem(80px);
+  height: 100%;
+  display: flex;
+	@include cover;
+  text-decoration: none;
+  position: relative;
+
+  @include phones {
+    width: rem(35px);
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(20, 20, 20, 0.7);
+  }
+}
+
+.menu-acco__link {
+  font-size: rem(40px);
+	color: #fff;
+	@include gagalin;
+	text-align: center;
+	white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translate(-50%, -50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 50%;
+  text-decoration: none;
+
+  @include phones {
+    font-size: rem(25px);
+  }
+
+}
+
+.menu-acco__content {
+  display: flex;
+  width: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+
+.menu-acco__text {
+  @include ubuntu(light);
+  background: rgba(#2f3234, .93);
+  font-size: rem(14px);
+  color: #fff;
+  padding: rem(60px) rem(30px);
+  line-height: 1.8;
+  height: 100%;
+}
+

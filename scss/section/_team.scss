@@ -1,0 +1,185 @@
+.team {
+  background: url('../img/team.png') center top no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team__section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba($black, .93);
+  padding-top: 6%;
+  
+  @include tablets() {
+    width: 100%;
+    padding-top: 14%;
+  }
+
+  @include phones() {
+    padding-top: 10%;
+  }
+}
+
+.team-acco {
+  margin-left: rem(85px);
+  
+  @include tablets() {
+    margin-left: 0;
+  }
+}
+
+.team__content {
+  width: 86%;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablets() {
+    text-align: center;
+    width: inherit;
+  }
+}
+
+.team-title_position {
+  padding: 0;
+  margin-bottom: rem(73px);
+  @include tablets() {
+    margin-bottom: rem(120px);
+  }
+
+  @include phones() {
+    margin-bottom: rem(105px);
+  }
+}
+
+.team-acco__item {
+  margin-bottom: rem(28.8px);
+      transition: .3s;
+
+  @include phones() {
+    margin-bottom: rem(17.6px);
+  }
+ 
+  &.active {
+    .team-acco__title {
+      color: $orange;
+      
+
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+.team-acco__title {
+  @include gagalin();
+  font-size: rem(14px);
+  color: #fff;
+  margin-bottom: rem(10px);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  @include tablets() {
+    justify-content: center;
+    font-size: rem(24px);
+  }
+
+  @include phones() {
+    font-size: rem(30px);
+  }
+
+  &:before {
+    content: "";
+    width: rem(0px);
+    height: rem(0px);
+    border: rem(7px) solid transparent;
+    border-top-color: $orange;
+    border-bottom: none;
+    margin-right: rem(10px);
+    transition: .3s;
+  }
+}
+
+.team-acco__content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  margin-left: rem(17px);
+  transition: .1s;
+  
+
+  @include tablets() {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.team-acco__avatar {
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
+
+  @include phones {
+    margin-bottom: 20px;
+    width: rem(125px);
+    height: rem(125px);
+  }
+}
+
+.team-acco__avatar-pic {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team-acco__desc {
+  width: 40%;
+  margin-left: rem(20px);
+
+  @include tablets {
+    margin-left: 0;
+    width: 60%;
+  }
+
+  @include phones {
+    width: 74%;
+  }
+}
+
+.team-acco__desc-occ {
+  @include ubuntu(bold);
+  font-size: rem(14px);
+  color: #fff;
+  margin-bottom: rem(15px);
+
+  @include tablets {
+  font-size: rem(17px);
+    
+  }
+}
+
+.team-acco__desc-text {
+  @include ubuntu(light);
+  font-size: rem(14px);
+  color: #fff;
+
+  @include phones {
+    font-size: rem(17px);
+    line-height: rem(24px);
+  }
+}
