@@ -420,6 +420,9 @@ order__form-input.disabled, .order__form-input.disabled:hover { cursor: default;
 
 @media screen and (max-width: 768px) { .phone-menu__link { text-decoration: none; color: #fff; font-size: 1.5rem; text-transform: uppercase; } }
 
+.btn { background: #f8b43a; font-size: 0.8125rem; text-transform: uppercase; color: #fff; text-align: center; text-decoration: none; border-radius: 0.3125rem; padding: 0.5625rem 1rem; font-family: 'Ubuntu', Helvetica, sans-serif; font-weight: 500; }
+.btn:hover { background: #e35028; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
