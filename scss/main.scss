@@ -29,9 +29,15 @@ $phones: 480px;
 @import "section/_order";
 @import "section/_order-link";
 @import "section/_contacts";
+@import "section/_fixed-menu.scss";
+@import "section/_hamburger-menu-link.scss";
+@import "section/_hamburger-menu.scss";
+@import "section/_popups.scss";
+@import "section/_phone-menu.scss";
 
 //layout
 @import "layout/_normalize";
 @import "layout/_fonts";
 @import "layout/_base";
 @import "layout/_adjustment";
+@import "layout/_animations";
